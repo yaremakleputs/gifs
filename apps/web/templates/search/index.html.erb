@@ -1,0 +1,11 @@
+<h1>Type any word to find gif</h1>
+<form action="search" method="get">
+  <input type="text" name="query">
+  <input type="submit" value="search">
+</form>
+
+<div class="gif-list">
+  <% search_results.each do |gif| %>
+    <img src=<%= gif['images']['downsized']['url'] %> alt=<%= gif['title'] %> width="200" height="200">
+  <% end %>
+</div>

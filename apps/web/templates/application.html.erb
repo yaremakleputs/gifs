@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web</title>
+    <%= favicon %>
+    <%= stylesheet 'main' %>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Favorites</a></li>
+        </ul>
+      </nav>
+    </div>
+    <%= yield %>
+  </body>
+</html>

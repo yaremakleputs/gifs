@@ -1,0 +1,3 @@
+project=giphy
+test=rspec
+template=erb
